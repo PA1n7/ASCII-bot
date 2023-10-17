@@ -42,7 +42,7 @@ async def on_message(message):
                 ASCII.ascii(filename, "temp.txt", 50)
                 file = discord.File("temp.txt")
                 await message.reply(file=file, content="Here you go!")
-                os.remove(filename)
                 os.remove("temp.txt")
+                os.remove(filename)
 
-bot.run()#put token in here
+bot.run("")# add token here
